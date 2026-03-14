@@ -1,0 +1,77 @@
+{
+  "paracetamol": {
+    "category": "analgesic",
+    "use": "fever and mild pain relief",
+    "side_effects": ["nausea", "rash"],
+    "avoid_if": ["liver disease"],
+    "interactions": {
+      "ibuprofen|paracetamol": {
+        "severity": "low",
+        "message": "Usually used together carefully, but dosage should be monitored."
+      }
+    }
+  },
+  "ibuprofen": {
+    "category": "nsaid",
+    "use": "pain, swelling, fever",
+    "side_effects": ["stomach pain", "nausea", "dizziness"],
+    "avoid_if": ["kidney disease", "ulcer"],
+    "interactions": {
+      "ibuprofen|paracetamol": {
+        "severity": "low",
+        "message": "Usually used together carefully, but dosage should be monitored."
+      },
+      "ibuprofen|warfarin": {
+        "severity": "high",
+        "message": "Can increase bleeding risk significantly."
+      }
+    }
+  },
+  "warfarin": {
+    "category": "anticoagulant",
+    "use": "blood thinning",
+    "side_effects": ["bleeding", "bruising", "dizziness"],
+    "avoid_if": ["pregnancy", "bleeding disorder"],
+    "interactions": {
+      "aspirin|warfarin": {
+        "severity": "high",
+        "message": "High bleeding risk when combined."
+      },
+      "ibuprofen|warfarin": {
+        "severity": "high",
+        "message": "Can increase bleeding risk significantly."
+      }
+    }
+  },
+  "aspirin": {
+    "category": "antiplatelet",
+    "use": "pain relief and blood thinning",
+    "side_effects": ["stomach irritation", "bleeding", "nausea"],
+    "avoid_if": ["aspirin", "ulcer", "bleeding disorder"],
+    "interactions": {
+      "aspirin|warfarin": {
+        "severity": "high",
+        "message": "High bleeding risk when combined."
+      }
+    }
+  },
+  "cetirizine": {
+    "category": "antihistamine",
+    "use": "allergy relief",
+    "side_effects": ["drowsiness", "dry mouth", "dizziness"],
+    "avoid_if": [],
+    "interactions": {
+      "alcohol|cetirizine": {
+        "severity": "medium",
+        "message": "May increase drowsiness and slow reaction time."
+      }
+    }
+  },
+  "amoxicillin": {
+    "category": "antibiotic",
+    "use": "bacterial infection treatment",
+    "side_effects": ["rash", "diarrhea", "nausea"],
+    "avoid_if": ["penicillin allergy"],
+    "interactions": {}
+  }
+}
